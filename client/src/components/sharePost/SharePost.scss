@@ -1,0 +1,100 @@
+.share-post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    background-color: white;
+
+    .share-post-top {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+
+        img,
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #e2e5ea;
+        }
+
+        .avatar{
+            padding: 5px;
+        }
+
+        input {
+            width: calc(100% - 50px);
+            border-radius: 20px;
+            padding-inline: 20px;
+            border: none;
+            background-color: #f0f2f5;
+            font-size: 1.125rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .share-post-container {
+        width: 100%;
+        position: relative;
+
+        .share-video{
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .share-img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: contain;
+        }
+
+        .delete-img {
+            background-color: #db0000;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 4px 10px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .share-post-buttom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .photo-video-share {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            color: gray;
+            cursor: pointer;
+
+            .photo-video-share-icon {
+                font-size: 1.75rem;
+                color: #c89300;
+            }
+        }
+
+        .share-button {
+            background-color: #c89300;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}

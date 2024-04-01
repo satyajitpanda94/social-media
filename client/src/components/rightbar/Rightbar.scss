@@ -1,0 +1,45 @@
+.rightbar-container {
+    width: 100%;
+    .people-you-may-know-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+
+    .friend-request-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+
+    hr {
+        margin-block: 20px;
+    }
+
+    .contacts-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.friend-request-from-container {
+    display: flex;
+    gap: 5px;
+
+    .left-container {
+        img {
+            width: 45px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgb(230, 230, 230);
+        }
+        .avatar {
+            padding: 5px;
+            background-color: #e2e5ea;
+            font-size: 45px;
+            border-radius: 50%;
+            line-height: 0;
+            padding: 6px;
+        }
+    }
+
+    .right-container {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+
+        .name {
+            font-weight: 500;
+            overflow-wrap: anywhere;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 5px;
+
+            .confirm-button,
+            .delete-button {
+                width: 90px;
+                padding: 5px 10px;
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+                border-radius: 2px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: blue;
+                }
+            }
+
+            .delete-button {
+                background-color: #e8e8e8;
+                color: black;
+
+                &:hover{
+                    background-color: #dfdfff;
+                }
+            }
+        }
+    }
+}

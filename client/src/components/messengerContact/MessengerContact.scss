@@ -1,0 +1,50 @@
+.messenger-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: azure;
+
+    img {
+        width: 50px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgb(230, 230, 230);
+    }
+
+    .avatar {
+        padding: 5px;
+        background-color: #e2e5ea;
+        font-size: 50px;
+        border-radius: 50%;
+        line-height: 0;
+        padding: 6px;
+    }
+
+    .name {
+        display: none;
+    }
+
+    &:hover {
+        background-color: rgb(242, 242, 242);
+    }
+}
+
+.active {
+    background-color: rgb(231, 234, 255);
+}
+
+@media screen and (min-width:768px) {
+    .messenger-contact {
+        justify-content: flex-start;
+    
+        .name {
+            display: inline-block;
+            font-weight: 500;
+        }
+    }
+}

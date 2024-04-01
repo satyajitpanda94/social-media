@@ -1,0 +1,45 @@
+.comments-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .comment-input-container {
+        display: flex;
+        gap: 10px;
+
+        img,
+        .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .comment-input {
+            display: flex;
+            align-items: center;
+            background-color: #f0f2f5;
+            border-radius: 20px;
+            padding-inline: 15px;
+            width: calc(100% - 35px);
+            gap: 5px;
+
+            input {
+                width: 100%;
+                border: none;
+                font-size: 1rem;
+                background-color: #f0f2f5;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .send-button {
+                color: grey;
+                font-size: 20px;
+                border: none;
+            }
+        }
+    }
+}

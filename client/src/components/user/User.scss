@@ -1,0 +1,73 @@
+.user-container {
+    width: 220px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .user-profile-pic {
+        line-height: 0;
+
+        img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .user-container-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+
+        .user-name {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .unfollow-button,
+            .confirm-button,
+            .delete-button,
+            .add-friend-button,
+            .cancle-button {
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: blue;
+                }
+            }
+
+            .delete-button,
+            .cancle-button {
+                background-color: #e8e8e8;
+                color: black;
+
+                &:hover {
+                    background-color: #dfdfff;
+                }
+            }
+
+            .unfollow-button[disabled],
+            .confirm-button[disabled],
+            .delete-button[disabled] {
+                pointer-events: none;
+                opacity: 0.2;
+            }
+        }
+    }
+}

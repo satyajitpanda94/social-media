@@ -1,0 +1,56 @@
+.may-be-friend-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-container {
+        display: flex;
+        align-items: center;
+        flex-basis: 75%;
+        gap: 5px;
+        img {
+            width: 45px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid rgb(230, 230, 230);
+        }
+        .avatar {
+            padding: 5px;
+            background-color: #e2e5ea;
+            font-size: 45px;
+            border-radius: 50%;
+            line-height: 0;
+            padding: 6px;
+        }
+        .name {
+            font-weight: 500;
+            overflow-wrap: anywhere;
+        }
+    }
+
+    .right-container {
+        flex-basis: 25%;
+        .button-container {
+            .add-friend, .cancle {
+                padding: 5px 10px;
+                background-color: blueviolet;
+                color: white;
+                border-radius: 2px;
+                font-weight: 500;
+                white-space: nowrap;
+                cursor: pointer;
+
+                &:focus, &:hover{
+                    background-color: blue;
+                }
+            }
+
+            .cancle {
+                background-color: grey;
+            }
+
+        }
+    }
+}

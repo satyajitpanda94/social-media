@@ -1,0 +1,158 @@
+.topbar-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+    .image-container {
+        width: 100%;
+        position: relative;
+        height: 400px;
+
+        .cover-pic-container {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                border-radius: 0 0 5px 5px;
+                box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .profile-pic-container {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 200px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                border-radius: 20px;
+                border: 5px solid white;
+                background-color: white;
+            }
+        }
+    }
+
+    .user-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .name {
+                font-size: 1.75rem;
+                font-weight: 700;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            align-items: center;
+            justify-content: center;
+
+            .edit-profile-button,
+            .add-friend,
+            .cancle,
+            .confirm-button,
+            .delete-button,
+            .message-button {
+                padding: 5px 10px;
+                background-color: blueviolet;
+                color: white;
+                border-radius: 2px;
+                font-weight: 500;
+                white-space: nowrap;
+                cursor: pointer;
+
+                &:focus,
+                &:hover {
+                    background-color: blue;
+                }
+            }
+
+            .edit-profile-button {
+                display: flex;
+                align-items: center;
+                background-color: #dddddd;
+                color: black;
+                gap: 5px;
+                border-radius: 5px;
+                letter-spacing: 0.5px;
+                padding: 10px;
+
+                .edit-icon {
+                    font-size: 20px;
+                }
+
+                &:focus,
+                &:hover {
+                    background-color: #dfdfff;
+                }
+            }
+
+            .cancle,
+            .delete-button {
+                background-color: grey;
+            }
+
+            .message-button {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .topbar-container {
+        position: relative;
+
+        .image-container {
+            height: 450px;
+
+            .profile-pic-container {
+                top: 250px;
+                justify-content: flex-start;
+                padding-left: 50px;
+            }
+        }
+
+        .user-info-wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+            position: absolute;
+            top: 335px;
+            padding-inline: 260px 55px;
+
+            .user-info {
+                align-items: flex-start;
+                padding-top: 20px;
+
+                .name {
+                    font-size: 2rem;
+                }
+            }
+
+            .button-container {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}

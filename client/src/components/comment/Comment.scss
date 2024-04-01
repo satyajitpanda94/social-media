@@ -1,0 +1,39 @@
+.comment-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    .comment-left {
+        display: flex;
+        gap: 10px;
+        .comment-user-info {
+            img,.avatar {
+                height: 35px;
+                width: 35px;
+                border-radius: 50%;
+                background-color: #e2e5ea;
+                object-fit: cover;
+            }
+            .avatar{
+                padding: 4px;
+            }
+        }
+
+        .comment-info {
+            background-color: #f0f2f5;
+            padding: 5px 10px;
+            border-radius: 10px;
+           
+            .user-name{
+                font-weight: 500;
+                color: grey;
+            }
+        }
+    }
+
+    .comment-right {
+        .date {
+            font-size: 14px;
+        }
+    }
+}

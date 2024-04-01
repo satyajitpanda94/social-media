@@ -1,0 +1,199 @@
+@import "../../App.scss";
+
+.registration {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f2f5;
+
+    .registrationWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 40px 20px;
+
+        .registrationLeft,
+        .registrationRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .registrationLeft {
+            align-items: center;
+
+            .registrationLogo {
+                font-size: 2rem;
+                font-weight: 900;
+                color: #1775ee;
+                margin-bottom: 10px;
+
+                .logoFirstHalf {
+                    font-weight: 400;
+                }
+            }
+
+            .registrationDesc {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        .registrationRight {
+            align-items: center;
+            width: 100%;
+
+            .registrationBox {
+                width: 100%;
+                padding: 20px;
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 10px;
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+
+                .registrationInput {
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 2px;
+                    border: 1px solid rgb(228, 228, 228);
+                    font-size: 1.125rem;
+                    padding-inline: 10px;
+                }
+
+                .registrationInput:focus {
+                    outline-color: #4c99fe;
+                }
+
+                .passwordInput {
+                    position: relative;
+
+                    .registrationInput{
+                        padding-right: 40px;
+                    }
+
+                    .eyeicon {
+                        position: absolute;
+                        top: calc(22px - 0.625rem);
+                        right: 15px;
+                        font-size: 1.25rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .error {
+                    padding: 10px;
+                    background-color: lemonchiffon;
+                    border-left: 4px solid red;
+                }
+
+                .button {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 2px;
+                    border: none;
+                    background-color: #1775ee;
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                .button:hover {
+                    background-color: #4c99fe;
+                }
+
+                hr {
+                    margin-block: 5px;
+                }
+
+                .loginButton {
+                    background-color: #43d026;
+                    font-weight: 400;
+                    width: 100%;
+                }
+
+                .loginButton:hover {
+                    background-color: #21be02;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:480px) {
+    .registration {
+        .registrationWrapper {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width:640px) {
+    .registration {
+        .registrationWrapper {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .registration {
+
+        .registrationWrapper {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+
+            .registrationLeft {
+                align-items: start;
+
+                .registrationLogo {
+                    font-size: 3rem;
+                }
+
+                .registrationDesc {
+                    font-size: 1.25rem;
+                    text-align: left;
+                }
+            }
+
+            .registrationRight {
+                width: 450px;
+
+                .registrationBox {
+
+                    .registrationInput {
+                        height: 50px;
+                        font-size: 1.25rem;
+                        padding-inline: 20px;
+                    }
+
+                    .passwordInput {
+                        .registrationInput{
+                            padding-right: 45px;
+                        }
+    
+                        .eyeicon {
+                            top: calc(25px - 0.75rem);
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .button {
+                        height: 45px;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}

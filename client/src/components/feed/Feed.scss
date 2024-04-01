@@ -1,0 +1,17 @@
+.feed-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 5px;
+    padding: 0.5vw;
+}
+
+@media screen and (min-width:1024px) {
+    .feed-container {
+        width: 75%;
+    }
+}
